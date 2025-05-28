@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html onclick="playSong('song')" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousin</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<audio id="song" autoplay loop>
+    <source src="./Timeless.mp3" type="audio/mp3">
+</audio>    
+
+<script>
+    function playSong(songId) {
+        const song = document.getElementById(songId);
+        song.play();
+        }
+</script>
+
+</body>
+</html>
